@@ -15,6 +15,9 @@ public class AddressBookAppApplication {
 		// Log the active environment
 		log.info("Address Book App started in {} Environment",
 				context.getEnvironment().getProperty("spring.profiles.active", "default"));
+
+		log.info("Employee Payroll DB User is {}",
+				context.getEnvironment().getProperty("spring.datasource.username"));
 	}
 }
 
