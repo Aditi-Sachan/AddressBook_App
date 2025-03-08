@@ -1,0 +1,6 @@
+2025-03-08T12:03:15.598+05:30  INFO 12208 --- [AddressBookApp] [restartedMain] c.b.a.A.AddressBookAppApplication        : Starting AddressBookAppApplication using Java 23.0.2 with PID 12208 (C:\Users\91860\Desktop\GLA Address Book App\AddressBookApp\target\classes started by root in C:\Users\91860\Desktop\GLA Address Book App\AddressBookApp)
+2025-03-08T12:03:15.606+05:30 DEBUG 12208 --- [AddressBookApp] [restartedMain] c.b.a.A.AddressBookAppApplication        : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-08T12:03:15.609+05:30  INFO 12208 --- [AddressBookApp] [restartedMain] c.b.a.A.AddressBookAppApplication        : The following 1 profile is active: "dev"
+2025-03-08T12:03:25.528+05:30  WARN 12208 --- [AddressBookApp] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-08T12:03:26.528+05:30  INFO 12208 --- [AddressBookApp] [restartedMain] c.b.a.A.AddressBookAppApplication        : Started AddressBookAppApplication in 12.214 seconds (process running for 14.834)
+2025-03-08T12:03:26.537+05:30  INFO 12208 --- [AddressBookApp] [restartedMain] c.b.a.A.AddressBookAppApplication        : Address Book App started in dev Environment
