@@ -3,14 +3,13 @@ package com.bridgelabz.addressbookapp.AddressBookApp.controller;
 import com.bridgelabz.addressbookapp.AddressBookApp.dto.AddressBookDTO;
 import com.bridgelabz.addressbookapp.AddressBookApp.model.AddressBook;
 import com.bridgelabz.addressbookapp.AddressBookApp.service.AddressBookService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import lombok.extern.slf4j.Slf4j;
 
 import java.util.List;
 
-@Slf4j  // ✅ Enables Logging
 @RestController
 @RequestMapping("/addressbook")
 public class AddressBookController {
@@ -18,11 +17,18 @@ public class AddressBookController {
     @Autowired
     private AddressBookService service;
 
-    // ✅ Create a new contact
+    // ✅ Create a new contact with validation
     @PostMapping("/add")
-    public ResponseEntity<String> addContact(@RequestBody AddressBookDTO dto) {
+    public ResponseEntity<String> addContact(@Valid @RequestBody AddressBookDTO dto) {
         service.addContact(dto);
         return ResponseEntity.ok("Contact added successfully");
+    }
+
+    // ✅ Update an existing contact with validation
+    @PutMapping("/update/{id}")
+    public ResponseEntity<String> updateContact(@PathVariable Long id, @Valid @RequestBody AddressBookDTO dto) {
+        service.updateContact(id, dto);
+        return ResponseEntity.ok("Contact updated successfully");
     }
 
     // ✅ Get all contacts
@@ -37,13 +43,6 @@ public class AddressBookController {
         return ResponseEntity.ok(service.getContactById(id));
     }
 
-    // ✅ Update a contact
-    @PutMapping("/update/{id}")
-    public ResponseEntity<String> updateContact(@PathVariable Long id, @RequestBody AddressBookDTO dto) {
-        service.updateContact(id, dto);
-        return ResponseEntity.ok("Contact updated successfully");
-    }
-
     // ✅ Delete a contact
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<String> deleteContact(@PathVariable Long id) {
@@ -51,6 +50,7 @@ public class AddressBookController {
         return ResponseEntity.ok("Contact deleted successfully");
     }
 }
+
 
 
 

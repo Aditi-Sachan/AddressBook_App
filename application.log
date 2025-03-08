@@ -11,3 +11,10 @@
 2025-03-08T12:08:32.069+05:30  INFO 13552 --- [AddressBookApp] [restartedMain] c.b.a.A.AddressBookAppApplication        : Started AddressBookAppApplication in 9.682 seconds (process running for 10.786)
 2025-03-08T12:08:32.076+05:30  INFO 13552 --- [AddressBookApp] [restartedMain] c.b.a.A.AddressBookAppApplication        : Address Book App started in dev Environment
 2025-03-08T12:08:32.080+05:30  INFO 13552 --- [AddressBookApp] [restartedMain] c.b.a.A.AddressBookAppApplication        : Employee Payroll DB User is root
+2025-03-08T12:19:13.028+05:30  INFO 9736 --- [AddressBookApp] [restartedMain] c.b.a.A.AddressBookAppApplication        : Starting AddressBookAppApplication using Java 23.0.2 with PID 9736 (C:\Users\91860\Desktop\GLA Address Book App\AddressBookApp\target\classes started by root in C:\Users\91860\Desktop\GLA Address Book App\AddressBookApp)
+2025-03-08T12:19:13.034+05:30 DEBUG 9736 --- [AddressBookApp] [restartedMain] c.b.a.A.AddressBookAppApplication        : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-08T12:19:13.036+05:30  INFO 9736 --- [AddressBookApp] [restartedMain] c.b.a.A.AddressBookAppApplication        : The following 1 profile is active: "dev"
+2025-03-08T12:19:21.774+05:30  WARN 9736 --- [AddressBookApp] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-08T12:19:22.611+05:30  INFO 9736 --- [AddressBookApp] [restartedMain] c.b.a.A.AddressBookAppApplication        : Started AddressBookAppApplication in 10.79 seconds (process running for 12.003)
+2025-03-08T12:19:22.618+05:30  INFO 9736 --- [AddressBookApp] [restartedMain] c.b.a.A.AddressBookAppApplication        : Address Book App started in dev Environment
+2025-03-08T12:19:22.622+05:30  INFO 9736 --- [AddressBookApp] [restartedMain] c.b.a.A.AddressBookAppApplication        : Employee Payroll DB User is root
