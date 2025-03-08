@@ -5,14 +5,15 @@ import com.bridgelabz.addressbookapp.AddressBookApp.model.AddressBook;
 import com.bridgelabz.addressbookapp.AddressBookApp.repository.AddressBookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import com.bridgelabz.addressbookapp.AddressBookApp.interfaces.IAddressBookService;
 
 import java.util.List;
 
 @Service
-public class AddressBookService {
+public class AddressBookService implements IAddressBookService {
 
     @Autowired
-    private AddressBookRepository repository;
+    AddressBookRepository repository;
 
     // ✅ Add a new contact
     public void addContact(AddressBookDTO dto) {

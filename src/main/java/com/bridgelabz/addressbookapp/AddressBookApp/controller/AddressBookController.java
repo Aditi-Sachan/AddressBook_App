@@ -6,9 +6,11 @@ import com.bridgelabz.addressbookapp.AddressBookApp.service.AddressBookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import lombok.extern.slf4j.Slf4j;
 
 import java.util.List;
 
+@Slf4j  // ✅ Enables Logging
 @RestController
 @RequestMapping("/addressbook")
 public class AddressBookController {
