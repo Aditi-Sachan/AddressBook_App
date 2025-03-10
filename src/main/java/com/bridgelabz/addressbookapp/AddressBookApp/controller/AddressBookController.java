@@ -15,7 +15,7 @@ import java.util.List;
 public class AddressBookController {
 
     @Autowired
-    private AddressBookService service;
+    AddressBookService service;
 
     // ✅ Create a new contact with validation
     @PostMapping("/add")
